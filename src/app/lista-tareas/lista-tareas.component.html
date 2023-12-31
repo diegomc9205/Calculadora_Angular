@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="caja">
+      <h1>Tareas Pendientes</h1>
+      <ul class="tareas-lista">
+        <li *ngFor="let tarea of tareas; let i = index" class="tarea-item">
+          {{ tarea }}
+          <button (click)="eliminarTarea(i)">Eliminar</button>
+        </li>
+      </ul>
+  
+      <h2>Agregar Tarea</h2>
+      <form (submit)="agregarTarea(tarea.value, $event)">
+        <input type="text" #tarea />
+        <button type="submit">Agregar</button>
+      </form>
+  
+      <h2>Recuperar última tarea eliminada</h2>
+      <button (click)="recuperarUltimaTareaEliminada()">Recuperar</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,56 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .caja {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .tareas-lista {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tarea-item {
+    margin-bottom: 10px;
+  }
+  
+  .tarea-item button {
+    margin-left: 10px;
+  }
+  
+  form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  form button {
+    flex-shrink: 0;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
